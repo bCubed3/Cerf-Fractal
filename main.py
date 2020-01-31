@@ -1,4 +1,4 @@
-n = 7
+n = int(input("nombre d'années :"))
 import turtle
 turtle.speed(0)
 turtle.penup()
