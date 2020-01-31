@@ -5,9 +5,8 @@ turtle.penup()
 steps = 10
 dist = 50
 
-def drawHorn(x, y, n, a=0):
+def drawHorn(x, y, n, pos, a=0):
   if(n > 0):
-    pos = []
     turtle.setpos(x, y)
     turtle.pendown()
     turtle.forward(dist)
@@ -21,11 +20,6 @@ def drawHorn(x, y, n, a=0):
     turtle.penup()
     turtle.setpos(x, y)
     turtle.right(30)
-    px = pos[0][0]
-    py = pos[0][1]
-    drawHorn(px, py, n - 1, turtle.towards(px, py))
-    px = pos[1][0]
-    py = pos[1][1]
-    drawHorn(px, py, n - 1, turtle.towards(px, py))
+    return pos
 
-drawHorn(-200, 0, n)
+print(drawHorn(-200, 0, n, []))
