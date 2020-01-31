@@ -1,9 +1,7 @@
-n = int(input("nombre d'années :"))
+n = int(input("nombre d'annees :"))
 import turtle
 turtle.speed(0)
 turtle.penup()
-steps = 10
-dist = 50
 
 def drawHorn(x, y, n, pos=[], a=0):
   if(n > 0):
