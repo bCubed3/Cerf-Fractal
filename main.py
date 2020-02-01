@@ -12,7 +12,7 @@ def draw_fractal(x, y, n, a=0):
 	turtle.seth(a)
 	if n == 1:
     	turtle.pendown()
-		turtle.forward(forward)
+    	turtle.forward(dist)
 		turtle.penup()
 	if n == 2:
     	turtle.pendown()
