@@ -1,5 +1,4 @@
-#n = int(input("nombre d'annees :"))
-n = 6
+n = int(input("nombre d'annees :"))
 import turtle
 turtle.speed(0)
 turtle.penup()
